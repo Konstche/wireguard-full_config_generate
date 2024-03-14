@@ -12,7 +12,7 @@ if (("$b" < "255"))
 then
 let b++
 ipa=10.0.0.$b/32
-
+#
 
 mkdir /etc/wireguard/client_cert/$usern
 wg genkey | tee /etc/wireguard/client_cert/$usern/$usern$private | wg pubkey > /etc/wireguard/client_cert/$usern/$usern$public
